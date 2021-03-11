@@ -32,7 +32,12 @@
             <form id="connection_form" action="">
                 <div>
                     <label for="topic">Topic: </label>
-                    <input type="text" id="topic" name="topic">
+                    <select name="topic" id="topic">
+                        <option disabled selected value>Select a topic</option>
+                        <option value="anime">Anime</option>
+                        <option value="manga">Manga</option>
+                        <option value="game">Game</option>
+                    </select>
                 </div>
                 <div>
                     <label for="name">Name: </label>

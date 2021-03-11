@@ -190,10 +190,7 @@ form {
 }
 .copyright {
     font-size: 16px;
-    /*margin-left: 1em;*/
-}
-p.copyright {
-    margin-top: 0em;
+    margin-top: 0.5em;
 }
 .footer_links {
     display: flex;
@@ -202,7 +199,7 @@ p.copyright {
 .footer_links a {
     display: block;
     color: black;
-    padding: 1em;
+    padding: 0.5em;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
@@ -211,7 +208,7 @@ p.copyright {
 }
 .footer_links li {
     /*padding: 1em;*/
-    margin-top: 1em;
+    margin-top: 0.5em;
     list-style-type: none;
     margin-right: 0.5em;
 }

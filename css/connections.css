@@ -122,6 +122,8 @@ ul {
 .connections {
     display: flex;
     padding-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .anime, .manga, .games {
     padding: 3em;
@@ -155,7 +157,7 @@ img {
     font-size: 16px;
     margin-top: 0.5em;
 }
-.footer_links {
+.footer_links ul {
     display: flex;
     flex-direction: row;
 }

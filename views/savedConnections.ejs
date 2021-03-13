@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections</title>
+    <link rel="icon" href="../assets/logo2.png">
+    <link rel="stylesheet" href="../css/savedConnections.css">
+</head>
+
+<body>
+<%- include('partials/menu.ejs') %>
+    <div class="container">
+        <div class="content">
+            <div class="content-text">
+                <h1>My Connections</h1>
+                <div class="connection_table_div">
+                    <table class="connection_table">
+                        <thead>
+                            <tr>
+                                <th>Connection</th>
+                                <th>Category</th>
+                                <th>Attending</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mushoku Tensei</td>
+                                <td>Anime</td>
+                                <td>Yes</td>
+                                <td class="button_td">
+                                    <form action="connections"><button class="update_button">Update</button>
+                                    </form>
+                                    <form action="savedConnections"><button
+                                            class="delete_button">Delete</button></form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy XIV</td>
+                                <td>Game</td>
+                                <td>Maybe</td>
+                                <td class="button_td">
+                                    <form action="connections"><button class="update_button">Update</button>
+                                    </form>
+                                    <form action="savedConnections"><button
+                                            class="delete_button">Delete</button></form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('partials/footer.ejs') %>
+</body>
+
+</html>

@@ -9,19 +9,18 @@ let connections = connectDB.getConnections();
 
 router.get('/', function (req, res) {
     // if it's a valid connection
-    if(connections.length != 0 && typeof(connections) != 'undefined') {
+    if (connections.length != 0 && typeof (connections) != 'undefined') {
         // if there are no query parameters then just display the connections page
-        if(Object.keys(req.query).length === 0) {
-        res.render('connections', {connections: connections, req: req});
+        if (Object.keys(req.query).length === 0) {
+            res.render('connections', { connections: connections, req: req });
         }
         // else display the specific connection
         else {
-            for(let i =0; i < connections.length; i++) {
+            for (let i = 0; i < connections.length; i++) {
                 // if the ?id= parameter matches a connection's id then display the connection page
-                if(req.query.id == connections[i].getID()) {
-                    console.log(connections[i].getID())
+                if (req.query.id == connections[i].getID()) {
                     req.query.id = connections[i].getID()
-                    res.render('connection', {connection: connections[i], req: req});
+                    res.render('connection', { connection: connections[i], req: req });
                 }
             }
         }

@@ -39,7 +39,7 @@ const connections = [
     new Connection('gf0221', 'Final Fantasy XIV', 'Game',
         'An online meetup via Zoom to watch and discuss the latest episode of Final Fantasy XIV.',
         '02-21-2021', 'Online Zoom Call'),
-    new Connection('gn0221', 'ier Automata', 'Game',
+    new Connection('gn0221', 'Nier Automata', 'Game',
         'An online meetup via Zoom to watch and discuss the latest episode of Nier Automata.',
         '02-21-2021', 'Online Zoom Call'),
     new Connection('gb0221', 'BlazBlue Centralfiction', 'Game',

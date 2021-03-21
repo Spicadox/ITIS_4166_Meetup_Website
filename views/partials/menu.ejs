@@ -1,15 +1,15 @@
 <nav class="menu">
     <ul>
-        <li class="home_icon"><a href="index"><img src="../assets/logo2.png" alt="home_icon"></a></li>
+        <li class="home_icon"><a href="index"><img src="../assets/images/logo2.png" alt="home_icon"></a></li>
         <li><a href="newConnection">Start New Connection</a></li>
-<!--        Checks for and display login or sign out text depending on what pages is currently being visited-->
-        <% if(req.path === '/savedConnections' || req.path === '/newConnection') { %>
-        <li><a href="savedConnections">My Connections</a></li>
-        <li><a href="index">Sign Out</a></li>
-        <% }else{ %>
-            <li><a href="savedConnections">Login</a></li>
-            <li><a href="savedConnections">Sign Up</a></li>
-        <% } %>
+        <!--        Checks for and display login or sign out text depending on what pages is currently being visited-->
+        <% if(req.path==='/savedConnections' || req.path==='/newConnection' ) { %>
+            <li><a href="savedConnections">My Connections</a></li>
+            <li><a href="index">Sign Out</a></li>
+            <% }else{ %>
+                <li><a href="savedConnections">Login</a></li>
+                <li><a href="savedConnections">Sign Up</a></li>
+                <% } %>
     </ul>
 </nav>
 <div class="gen_nav_div">
